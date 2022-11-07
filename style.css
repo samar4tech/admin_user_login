@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 25px;
+}
+
+header ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+p {
+  color: #555;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+
+.btn {
+  display: inline-block;
+
+  padding: 8px 30px;
+  margin: 30px 0;
+
+  background-color: #ff523b;
+  color: #fff;
+
+  border-radius: 30px;
+
+  transition: background 0.5s;
+}
+
+header {
+  min-height: 4rem;
+  background-color: white;
+  color: white;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  min-width: 100%;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  padding: 1rem;
+}
+
+.btn:hover {
+  background-color: #563434;
+}
+
+h4 {
+  color: #555;
+  font-weight: normal;
+}
+
+/* ------------account page-------- */
+
+.account-page {
+  /* background: radial-gradient(#fff, #774e4e); */
+  background: radial-gradient(#fff, #ff523b73, #fff);
+  padding: 50px 0;
+}
+
+.form-container,
+.my-container {
+  position: relative;
+
+  background: #fff;
+
+  width: 300px;
+  height: 400px;
+
+  text-align: center;
+
+  padding: 20px 0;
+  margin: auto;
+
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.my-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.my-container h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.3;
+}
+.my-container ul,
+.displayedID {
+  flex: 0.5;
+}
+.admin #items {
+  flex: 0.38;
+}
+.admin p,
+.user p {
+  margin-top: -4.5rem;
+  padding-bottom: 0.2rem;
+  font-weight: 800;
+}
+.admin .receivedReq {
+  flex: 0.3;
+  text-align: center;
+}
+.receivedReq,
+.displayedID {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -3.6rem;
+}
+
+.receivedReq li {
+  display: flex;
+  justify-content: space-between;
+}
+.my-container ul li,
+.listProducts {
+  margin: 0 0.2rem;
+  padding: 0.4rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.listProducts {
+  min-width: 100%;
+  margin: 0 0.4rem;
+}
+.my-container button {
+  display: inline-block;
+
+  padding: 0.1rem 0.4rem;
+
+  background-color: #ff523b;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.form-container span {
+  display: inline-block;
+
+  width: 100px;
+
+  font-weight: bold;
+
+  padding: 0 10px;
+
+  color: #555;
+
+  cursor: pointer;
+}
+.displayedID {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-btn {
+  display: inline-block;
+}
+
+.form-container form {
+  position: absolute;
+  top: 130px;
+
+  max-width: 300px;
+
+  padding: 0 20px;
+
+  transition: transform 1s;
+}
+
+form input {
+  width: 100%;
+  height: 30px;
+
+  margin: 10px 0;
+  padding: 0 10px;
+
+  border: 1px solid #ccc;
+}
+
+form .btn {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  cursor: pointer;
+}
+
+form .btn:focus {
+  outline: none;
+}
+
+#LoginForm {
+  left: -300px;
+}
+
+#RegForm {
+  left: 0;
+}
+
+form a {
+  font-size: 12px;
+}
+
+#Indicator {
+  width: 100px;
+  height: 3px;
+
+  margin-top: 8px;
+
+  background: #ff523b;
+
+  border: none;
+
+  transform: rotateX(100px);
+  transition: transform 1s;
+}
+.displayedProducts {
+  margin-top: -0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*------------ media query for less than 600 screen size------------------- */
+
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center;
+  }
+
+  .col-2 {
+    flex-basis: 100%;
+  }
+}
