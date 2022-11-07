@@ -121,7 +121,7 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0.3;
+  flex: 0.2;
 }
 .my-container ul,
 .displayedID {
@@ -132,9 +132,11 @@ h4 {
 }
 .admin p,
 .user p {
-  margin-top: -4.5rem;
-  padding-bottom: 0.2rem;
+  flex: 0.1;
+  margin-top: -0.4rem;
   font-weight: 800;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid grey;
 }
 .admin .receivedReq {
   flex: 0.3;
@@ -145,17 +147,14 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -3.4rem;
+  margin-top: -3.3rem;
 }
 
 .receivedReq li {
   display: flex;
   justify-content: space-between;
 }
-.admin p,
-.user p {
-  margin: 1rem 0;
-}
+
 .my-container ul li,
 .listProducts {
   margin: 0 0.2rem;
@@ -262,7 +261,7 @@ form a {
   transition: transform 1s;
 }
 .displayedProducts {
-  margin-top: -0.5rem;
+  margin-top: -0.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
