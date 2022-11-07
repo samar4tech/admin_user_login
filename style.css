@@ -134,8 +134,8 @@ h4 {
 .user p {
   flex: 0.1;
   margin-top: -0.4rem;
-  font-weight: 800;
-  padding-bottom: 0.2rem;
+  font-weight: 700;
+  padding-bottom: 0.3rem;
   border-bottom: 1px solid grey;
 }
 .admin .receivedReq {
